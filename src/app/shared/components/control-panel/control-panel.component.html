@@ -1,0 +1,143 @@
+<div class="control-panel">
+  <div class="panel-header">
+    <h2>{{ elementName }} Controls</h2>
+    <p>Customize your {{ elementName.toLowerCase() }}.</p>
+  </div>
+
+  <div class="control-group">
+    <label for="element-text">Text</label>
+
+    <input
+      id="element-text"
+      type="text"
+      [(ngModel)]="styles.text"
+      (ngModelChange)="updateStyles()"
+    />
+  </div>
+
+  <div class="control-group">
+    <label for="element-width">
+      Width
+      <span>{{ styles.width }}px</span>
+    </label>
+
+    <input
+      id="element-width"
+      type="range"
+      min="50"
+      max="500"
+      [(ngModel)]="styles.width"
+      (ngModelChange)="updateStyles()"
+    />
+  </div>
+
+  <div class="control-group">
+    <label for="element-height">
+      Height
+      <span>{{ styles.height }}px</span>
+    </label>
+
+    <input
+      id="element-height"
+      type="range"
+      min="24"
+      max="150"
+      [(ngModel)]="styles.height"
+      (ngModelChange)="updateStyles()"
+    />
+  </div>
+
+  <div class="control-group">
+    <label for="element-font-size">
+      Font Size
+      <span>{{ styles.fontSize }}px</span>
+    </label>
+
+    <input
+      id="element-font-size"
+      type="range"
+      min="10"
+      max="72"
+      [(ngModel)]="styles.fontSize"
+      (ngModelChange)="updateStyles()"
+    />
+  </div>
+
+  <div class="control-group">
+    <label for="element-background"> Background Color </label>
+
+    <div class="color-control">
+      <input
+        id="element-background"
+        type="color"
+        [(ngModel)]="styles.backgroundColor"
+        (ngModelChange)="updateStyles()"
+      />
+
+      <span>{{ styles.backgroundColor }}</span>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label for="element-color"> Text Color </label>
+
+    <div class="color-control">
+      <input
+        id="element-color"
+        type="color"
+        [(ngModel)]="styles.color"
+        (ngModelChange)="updateStyles()"
+      />
+
+      <span>{{ styles.color }}</span>
+    </div>
+  </div>
+
+  <div class="control-group">
+    <label for="element-radius">
+      Border Radius
+      <span>{{ styles.borderRadius }}px</span>
+    </label>
+
+    <input
+      id="element-radius"
+      type="range"
+      min="0"
+      max="50"
+      [(ngModel)]="styles.borderRadius"
+      (ngModelChange)="updateStyles()"
+    />
+  </div>
+
+  <div class="control-group">
+    <label for="element-padding-horizontal">
+      Horizontal Padding
+      <span>{{ styles.paddingHorizontal }}px</span>
+    </label>
+
+    <input
+      id="element-padding-horizontal"
+      type="range"
+      min="0"
+      max="60"
+      [(ngModel)]="styles.paddingHorizontal"
+      (ngModelChange)="updateStyles()"
+    />
+  </div>
+
+  <div class="control-group">
+    <label for="element-padding-vertical">
+      Vertical Padding
+      <span>{{ styles.paddingVertical }}px</span>
+    </label>
+
+    <input
+      id="element-padding-vertical"
+      type="range"
+      min="0"
+      max="40"
+      [(ngModel)]="styles.paddingVertical"
+      (ngModelChange)="updateStyles()"
+    />
+  </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="preview">
+  <div class="preview-header">
+    <h2>Live Preview</h2>
+  </div>
+
+  <div class="preview-content">
+    @if (element === 'button') {
+    <button
+      class="preview-button"
+      type="button"
+      [style.width.px]="styles.width"
+      [style.height.px]="styles.height"
+      [style.background-color]="styles.backgroundColor"
+      [style.color]="styles.color"
+      [style.font-size.px]="styles.fontSize"
+      [style.border-radius.px]="styles.borderRadius"
+      [style.padding]="
+        styles.paddingVertical + 'px ' + styles.paddingHorizontal + 'px'
+      "
+    >
+      {{ styles.text }}
+    </button>
+    } @if (element === 'input') {
+    <input
+      class="preview-input"
+      type="text"
+      [value]="styles.text"
+      [style.width.px]="styles.width"
+      [style.height.px]="styles.height"
+      [style.background-color]="styles.backgroundColor"
+      [style.color]="styles.color"
+      [style.font-size.px]="styles.fontSize"
+      [style.border-radius.px]="styles.borderRadius"
+      [style.padding]="
+        styles.paddingVertical + 'px ' + styles.paddingHorizontal + 'px'
+      "
+    />
+    } @if (element === 'select') {
+    <select
+      class="preview-select"
+      [style.width.px]="styles.width"
+      [style.height.px]="styles.height"
+      [style.background-color]="styles.backgroundColor"
+      [style.color]="styles.color"
+      [style.font-size.px]="styles.fontSize"
+      [style.border-radius.px]="styles.borderRadius"
+      [style.padding]="
+        styles.paddingVertical + 'px ' + styles.paddingHorizontal + 'px'
+      "
+    >
+      <option>{{ styles.text }}</option>
+      <option>Option Two</option>
+      <option>Option Three</option>
+    </select>
+    } @if (element === 'heading') {
+    <h1
+      class="preview-heading"
+      [style.font-size.px]="styles.fontSize"
+      [style.color]="styles.color"
+      [style.background-color]="styles.backgroundColor"
+      [style.border-radius.px]="styles.borderRadius"
+      [style.padding]="
+        styles.paddingVertical + 'px ' + styles.paddingHorizontal + 'px'
+      "
+    >
+      {{ styles.text }}
+    </h1>
+    } @if (element === 'paragraph') {
+    <p
+      class="preview-paragraph"
+      [style.font-size.px]="styles.fontSize"
+      [style.color]="styles.color"
+      [style.background-color]="styles.backgroundColor"
+      [style.border-radius.px]="styles.borderRadius"
+      [style.padding]="
+        styles.paddingVertical + 'px ' + styles.paddingHorizontal + 'px'
+      "
+    >
+      {{ styles.text }}
+    </p>
+    }
+  </div>
+</div>

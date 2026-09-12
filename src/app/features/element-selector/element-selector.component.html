@@ -1,0 +1,71 @@
+<div class="page">
+    <div class="container">
+      <header class="header">
+        <h1>CSS Generator</h1>
+        <p>Choose an HTML element to start styling.</p>
+      </header>
+  
+      <section class="element-grid">
+        <button
+          class="element-card"
+          type="button"
+          (click)="selectElement('button')"
+        >
+          <span class="element-icon">🔘</span>
+          <span class="element-name">Button</span>
+          <span class="element-description">
+            Create and style a button
+          </span>
+        </button>
+  
+        <button
+          class="element-card"
+          type="button"
+          (click)="selectElement('input')"
+        >
+          <span class="element-icon">📝</span>
+          <span class="element-name">Input</span>
+          <span class="element-description">
+            Style text inputs
+          </span>
+        </button>
+  
+        <button
+          class="element-card"
+          type="button"
+          (click)="selectElement('select')"
+        >
+          <span class="element-icon">🔽</span>
+          <span class="element-name">Dropdown</span>
+          <span class="element-description">
+            Style select elements
+          </span>
+        </button>
+  
+        <button
+          class="element-card"
+          type="button"
+          (click)="selectElement('heading')"
+        >
+          <span class="element-icon">H</span>
+          <span class="element-name">Heading</span>
+          <span class="element-description">
+            Style headings
+          </span>
+        </button>
+  
+        <button
+          class="element-card"
+          type="button"
+          (click)="selectElement('paragraph')"
+        >
+          <span class="element-icon">¶</span>
+          <span class="element-name">Paragraph</span>
+          <span class="element-description">
+            Style paragraph text
+          </span>
+        </button>
+      </section>
+    </div>
+  </div>
+  

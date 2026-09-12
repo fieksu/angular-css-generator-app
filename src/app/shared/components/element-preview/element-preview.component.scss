@@ -1,0 +1,35 @@
+.preview-input {
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+  outline: none;
+
+  &:focus {
+    border-color: #2563eb;
+  }
+}
+
+.preview-select {
+  box-sizing: border-box;
+
+  border: 1px solid #d1d5db;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.preview-heading {
+  margin: 0;
+
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.preview-paragraph {
+  margin: 0;
+
+  max-width: 600px;
+
+  line-height: 1.6;
+}
