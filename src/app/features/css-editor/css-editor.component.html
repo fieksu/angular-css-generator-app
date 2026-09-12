@@ -1,0 +1,32 @@
+<div class="page">
+  <header class="editor-header">
+    <div class="header-content">
+      <button class="back-button" type="button" (click)="goBack()">
+        ← Elements
+      </button>
+
+      <div>
+        <h1>{{ elementName }} Editor</h1>
+        <p>{{ elementDescription }}</p>
+      </div>
+
+      <button class="export-button" type="button" (click)="exportCss()">
+        Export CSS
+      </button>
+    </div>
+  </header>
+
+  <main class="editor-container">
+    <section class="controls">
+      <app-control-panel
+        [element]="element"
+        [styles]="styles"
+        (stylesChange)="updateStyles($event)"
+      />
+    </section>
+
+    <section class="preview-section">
+      <app-element-preview [element]="element" [styles]="styles" />
+    </section>
+  </main>
+</div>
